@@ -1,10 +1,8 @@
 var w=60;
 var h=20;
 function table(){
-  if(document.querySelectorAll('td')){
-    for(el of document.querySelectorAll('td')){
-      el.removeNEventListener('click',color);
-    }
+  for(el of document.querySelectorAll('td')){
+    el.removeEventListener('click',color);
   }
   let i=``;
   i+=`<table style="height:${300/w*h}px">`
@@ -12,7 +10,7 @@ function table(){
     i+=`<tr>`;
     let wi=w;
     while(wi>0){
-      i+=`<td></td>`;
+      i+=`<td style="background-color:#282828;"></td>`;
       wi--;
     }
     i+=`</tr>`;
@@ -24,9 +22,9 @@ function table(){
     el.addEventListener('click',color);
   }
 }
-function color(el){
+function color(event){
   switch(this.style.backgroundColor){
-    case 'rgb(200, 200, 200)': this.style.backgroundColor='#00FFA0'; break;
+    case 'rgb(40, 40, 40)': this.style.backgroundColor='#00FFA0'; break;
     case 'rgb(0, 255, 160)': this.style.backgroundColor='#FFFFA0'; break;
     case 'rgb(255, 255, 160)': this.style.backgroundColor=''; break;
   }
