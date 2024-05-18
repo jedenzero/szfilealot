@@ -7,12 +7,13 @@ function table(){
     }
   }
   let i=``;
-  i+=`<table style="height:${3000/w*h}px">`
+  i+=`<table style="height:${300/w*h}px">`
   while(h>0){
     i+=`<tr>`;
-    while(w>0){
+    let wi=w;
+    while(wi>0){
       i+=`<td></td>`;
-      w--;
+      wi--;
     }
     i+=`</tr>`;
     h--;
