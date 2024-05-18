@@ -26,7 +26,7 @@ function color(event){
   switch(this.style.backgroundColor){
     case 'rgb(40, 40, 40)': this.style.backgroundColor='#00FFA0'; break;
     case 'rgb(0, 255, 160)': this.style.backgroundColor='#FFFFA0'; break;
-    case 'rgb(255, 255, 160)': this.style.backgroundColor=''; break;
+    case 'rgb(255, 255, 160)': this.style.backgroundColor='#282828'; break;
   }
 }
 table();
