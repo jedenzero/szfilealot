@@ -1,11 +1,6 @@
 var w=60;
 var h=20;
 function table(){
-  if(document.querySelectorAll('td')){
-    for(el in document.querySelectorAll('td')){
-      el.removeEventListener('click',color);
-    }
-  }
   let i=``;
   i+=`<table style="height:${3000/w*h}">`
   while(h>0){
@@ -29,5 +24,6 @@ function color(el){
     case 'rgb(0, 255, 160)': this.style.backgroundColor='#FFFFA0'; break;
     case 'rgb(255, 255, 160)': this.style.backgroundColor=''; break;
   }
+  this.removeEventListener('click',color);
 }
 table();
