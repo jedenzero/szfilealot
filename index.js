@@ -1,3 +1,4 @@
+const t=document.querySelector('table');
 var w=60;
 var h=20;
 function table(){
@@ -5,7 +6,7 @@ function table(){
     el.removeEventListener('click',color);
   }
   let i=``;
-  i+=`<table style="height:${300/w*h}px">`
+  i+=`<table style="height:${t.clientWidth/w*h}px">`
   while(h>0){
     i+=`<tr>`;
     let wi=w;
