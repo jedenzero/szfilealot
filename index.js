@@ -1,12 +1,14 @@
-const t=document.querySelector('table');
 var w=60;
 var h=20;
+document.getElementById('szfilealot').innerHTML=`<table style="visibility:hidden;"></table>`;
+const wr=document.querySelector('table').clientWidth;
+
 function table(){
   for(el of document.querySelectorAll('td')){
     el.removeEventListener('click',color);
   }
   let i=``;
-  i+=`<table style="height:${t.clientWidth/w*h}px">`
+  i+=`<table style="height:${wr/w*h}px">`
   while(h>0){
     i+=`<tr>`;
     let wi=w;
