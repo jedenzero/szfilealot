@@ -2,7 +2,7 @@ table{
   margin:0 auto;
   width:300px;
   background-color:#282828;
-  table-layout: fixed
+  table-layout: fixed;
   border-spacing:0;
 }
 td{
